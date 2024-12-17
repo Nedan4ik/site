@@ -1,0 +1,16 @@
+[
+  {
+    "AuthToken": "Some string",
+    "first_name": "Name",
+    "last_name": "Last Name",
+    "password": "8f601755c20e239339a048d4ff8e203d",
+    "phone_number": "+71234567890"
+  },
+  {
+    "AuthToken": "e014bd242fc65478c3fae1394e640df6f8d847a6f02d61f0fd47d7e729adb16d",
+    "first_name": "Илья",
+    "last_name": "Карпушкин",
+    "password": "7aac102b039eeaa7ddc6f8c764058c11",
+    "phone_number": "123456"
+  }
+]

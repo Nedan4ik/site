@@ -1,0 +1,80 @@
+/** Тайтл **/
+
+/** Иди нафиг со своим дебагом **/
+
+.image-container {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.union__title {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 20%;
+}
+
+.union__title:nth-of-type(1) {
+    top: 20%;
+}
+
+.union__title:nth-of-type(2) {
+    top: 28%;
+}
+
+.union__title:nth-of-type(3) {
+    top: 36%;
+}
+
+/** Новости **/
+
+.latest__news {
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.latest__news .news__title {
+    font-size: 2.8rem; /* Уменьшил заголовок новостей */
+    left: 5%; /* Уменьшил отступ слева */
+    color: #222; /* Сделал текст темнее */
+    background: transparent; /* Убрал белый фон */
+    padding: 0; /* Убрал внутренний отступ */
+}
+
+.latest__news .news__copies {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.latest__news .news__copies .news__item {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.latest__news .news__copies .news__item a {
+    text-decoration: none;
+    color: #555;
+}
+
+.latest__news .news__copies .news__item:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.02);
+    cursor: pointer;
+}

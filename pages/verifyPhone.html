@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение Телефона</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .centered__title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input {
+            text-align: center;
+        }
+        .input input {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .input button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .input button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1 class="centered__title">
+        Подтверждение Телефона
+    </h1>
+    <div class="input">
+        <label for="verification-code">Введите код подтверждения:</label>
+        <input type="text" id="verification-code" name="verification-code" maxlength="6" placeholder="Код" required>
+        <br>
+        <button onclick="submitCode()">Подтвердить</button>
+    </div>
+</div>
+
+<script>
+    function submitCode() {
+        const code = document.getElementById('verification-code').value;
+
+        if (code.length === 6) {
+        } else {
+            alert('Пожалуйста, введите правильный 6-значный код');
+        }
+    }
+</script>
+</body>
+</html>

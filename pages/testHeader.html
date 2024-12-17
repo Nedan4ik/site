@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style/defaultStyle.css">
+    <link rel="stylesheet" href="./style/mainPage.css">
+</head>
+<body>
+
+<div class="header"></div>
+
+<div class="main">
+    <div class="image-container">
+        <img class="union" src="./icons/union_image.png" alt="union">
+        <h1 class="union__title">Союз</h1>
+        <h1 class="union__title">десантников</h1>
+        <h1 class="union__title">г.Караганда</h1>
+    </div>
+</div>
+
+<div class="latest__news">
+    <a class="news__title" href="/news">Новости</a>
+    <div class="news__copies">
+    </div>
+</div>
+
+<footer class="footer">
+</footer>
+<script type="module">
+    import { generateHeader, generateFooter, generateNews, genGallery } from './generator.js';
+    generateHeader('Главная');
+    generateFooter();
+    generateNews();
+    genGallery();
+</script>
+</body>
+</html>
